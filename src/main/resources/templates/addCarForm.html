@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Car</title>
+</head>
+<body>
+<h1>Add Car</h1>
+<form method="POST" action="car/add">
+    <label for="owner">Owner:</label>
+    <input type="text" id="owner" name="owner" required />
+    <br>
+    <label for="car">Car:</label>
+    <input type="text" id="car" name="car" required />
+    <br>
+    <label for="number">Number:</label>
+    <input type="text" id="number" name="number" required />
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age_car" required />
+    <br>
+    <label for="accidents">Accidents:</label>
+    <input type="number" id="accidents" name="accidents" required />
+    <br>
+    <label for="cost">Cost:</label>
+    <input type="number" step="0.01" id="cost" name="cost" required />
+    <br>
+    <label for="mileage">Mileage:</label>
+    <input type="number" step="0.01" id="mileage" name="mileage" required />
+    <br>
+    <label for="fine">Fine:</label>
+    <input type="number" id="fine" name="fine" required />
+    <br>
+    <label for="search">Search:</label>
+    <input type="checkbox" id="search" name="search" />
+    <br>
+    <input type="submit" value="Add Car" />
+</form>
+<a href="/">Cancel</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Details</title>
+</head>
+<body>
+<h1>Car Details</h1>
+<div>
+    <p><strong>ID:</strong> <span th:text="${car.id}"></span></p>
+    <p><strong>Number:</strong> <span th:text="${car.number}"></span></p>
+    <p><strong>Owner:</strong> <span th:text="${car.owner}"></span></p>
+    <p><strong>Car:</strong> <span th:text="${car.car}"></span></p>
+    <p><strong>Age:</strong> <span th:text="${car.age_car}"></span></p>
+    <p><strong>Accidents:</strong> <span th:text="${car.accidents}"></span></p>
+    <p><strong>Cost:</strong> <span th:text="${car.cost}"></span></p>
+    <p><strong>Mileage:</strong> <span th:text="${car.mileage}"></span></p>
+    <p><strong>Fine:</strong> <span th:text="${car.fine}"></span></p>
+    <p><strong>Search:</strong> <span th:text="${car.search} ? 'Yes' : 'No'"></span></p>
+</div>
+</body>
+</html>
